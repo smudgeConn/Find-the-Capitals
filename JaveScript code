@@ -1,0 +1,9 @@
+var capitals = function (word) {
+  let answer = [];
+  Array.from(word).forEach((letter, index) => {
+    if (word.charCodeAt(index) >= 65 && word.charCodeAt(index) <= 90) {
+      answer.push(index);
+    }
+  })
+  return answer;
+};
